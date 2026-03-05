@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VeloZone — Онлайн-магазин велозапчастин</title>
+  <meta name="description" content="VeloZone — велозапчастини найвищої якості. Ланцюги, гальма, покришки, рами та аксесуари для вашого велосипеда.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="VeloZone — головна">
+        <svg class="logo__icon" viewBox="0 0 40 40" width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+          <circle cx="20" cy="20" r="7" stroke="currentColor" stroke-width="2"/>
+          <line x1="20" y1="2" x2="20" y2="13" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="20" y1="27" x2="20" y2="38" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="2" y1="20" x2="13" y2="20" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="27" y1="20" x2="38" y2="20" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="7.3" y1="7.3" x2="15.1" y2="15.1" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="24.9" y1="24.9" x2="32.7" y2="32.7" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="32.7" y1="7.3" x2="24.9" y2="15.1" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="15.1" y1="24.9" x2="7.3" y2="32.7" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+        <span class="logo__text">VELO<span class="logo__accent">ZONE</span></span>
+      </a>
+
+      <button class="burger" id="burger" aria-label="Відкрити меню" aria-expanded="false">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+
+      <nav class="nav" id="nav" aria-label="Головна навігація">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#categories" class="nav__link">Категорії</a></li>
+          <li class="nav__item"><a href="#catalog" class="nav__link">Каталог</a></li>
+          <li class="nav__item"><a href="#advantages" class="nav__link">Переваги</a></li>
+          <li class="nav__item"><a href="#contacts" class="nav__link">Контакти</a></li>
+        </ul>
+        <a href="#catalog" class="btn btn--sm nav__cta">Замовити</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero__bg-shapes" aria-hidden="true">
+        <div class="hero__circle hero__circle--1"></div>
+        <div class="hero__circle hero__circle--2"></div>
+        <div class="hero__circle hero__circle--3"></div>
+        <div class="hero__spoke hero__spoke--1"></div>
+        <div class="hero__spoke hero__spoke--2"></div>
+        <div class="hero__spoke hero__spoke--3"></div>
+        <div class="hero__spoke hero__spoke--4"></div>
+      </div>
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <p class="hero__label">Онлайн-магазин велозапчастин</p>
+          <h1 class="hero__title">ЗАПЧАСТИНИ<br>НАЙВИЩОЇ<br><span class="hero__title--accent">ЯКОСТІ</span></h1>
+          <p class="hero__subtitle">Від ланцюга до рами — все для вашого велосипеда. Оригінальні компоненти від провідних світових брендів.</p>
+          <div class="hero__actions">
+            <a href="#catalog" class="btn btn--primary">Перейти до каталогу</a>
+            <a href="#categories" class="btn btn--outline">Категорії</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories" id="categories">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-header__label">Наш асортимент</span>
+          <h2 class="section-header__title">КАТЕГОРІЇ</h2>
+        </header>
+        <div class="categories__grid">
+          <a href="#catalog" class="category-card reveal">
+            <div class="category-card__icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="32" cy="32" r="20" stroke="currentColor" stroke-width="2"/>
+                <circle cx="32" cy="32" r="10" stroke="currentColor" stroke-width="2"/>
+                <circle cx="32" cy="32" r="3" fill="currentColor"/>
+                <path d="M32 12 L34 22 L30 22Z" fill="currentColor"/>
+                <path d="M32 52 L34 42 L30 42Z" fill="currentColor"/>
+                <path d="M12 32 L22 30 L22 34Z" fill="currentColor"/>
+                <path d="M52 32 L42 30 L42 34Z" fill="currentColor"/>
+                <path d="M17.9 17.9 L24.8 22.8 L22.8 24.8Z" fill="currentColor"/>
+                <path d="M46.1 46.1 L39.2 41.2 L41.2 39.2Z" fill="currentColor"/>
+                <path d="M46.1 17.9 L41.2 24.8 L39.2 22.8Z" fill="currentColor"/>
+                <path d="M17.9 46.1 L22.8 39.2 L24.8 41.2Z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="category-card__title">Трансмісія</h3>
+            <p class="category-card__count">340 товарів</p>
+            <span class="category-card__arrow">&rarr;</span>
+          </a>
+
+          <a href="#catalog" class="category-card reveal">
+            <div class="category-card__icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="32" cy="32" r="22" stroke="currentColor" stroke-width="2"/>
+                <circle cx="32" cy="32" r="14" stroke="currentColor" stroke-width="2"/>
+                <circle cx="32" cy="32" r="4" fill="currentColor"/>
+                <circle cx="32" cy="14" r="2" fill="currentColor"/>
+                <circle cx="32" cy="50" r="2" fill="currentColor"/>
+                <circle cx="14" cy="32" r="2" fill="currentColor"/>
+                <circle cx="50" cy="32" r="2" fill="currentColor"/>
+                <circle cx="19" cy="19" r="1.5" fill="currentColor"/>
+                <circle cx="45" cy="45" r="1.5" fill="currentColor"/>
+                <circle cx="45" cy="19" r="1.5" fill="currentColor"/>
+                <circle cx="19" cy="45" r="1.5" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="category-card__title">Гальма</h3>
+            <p class="category-card__count">215 товарів</p>
+            <span class="category-card__arrow">&rarr;</span>
+          </a>
+
+          <a href="#catalog" class="category-card reveal">
+            <div class="category-card__icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="32" cy="32" r="24" stroke="currentColor" stroke-width="2.5"/>
+                <circle cx="32" cy="32" r="20" stroke="currentColor" stroke-width="1"/>
+                <circle cx="32" cy="32" r="5" stroke="currentColor" stroke-width="2"/>
+                <line x1="32" y1="8" x2="32" y2="27" stroke="currentColor" stroke-width="1"/>
+                <line x1="32" y1="37" x2="32" y2="56" stroke="currentColor" stroke-width="1"/>
+                <line x1="8" y1="32" x2="27" y2="32" stroke="currentColor" stroke-width="1"/>
+                <line x1="37" y1="32" x2="56" y2="32" stroke="currentColor" stroke-width="1"/>
+              </svg>
+            </div>
+            <h3 class="category-card__title">Колеса та покришки</h3>
+            <p class="category-card__count">420 товарів</p>
+            <span class="category-card__arrow">&rarr;</span>
+          </a>
+
+          <a href="#catalog" class="category-card reveal">
+            <div class="category-card__icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 48 L32 16 L48 48" stroke="currentColor" stroke-width="2" stroke-linejoin="round" fill="none"/>
+                <line x1="24" y1="32" x2="40" y2="32" stroke="currentColor" stroke-width="2"/>
+                <line x1="32" y1="16" x2="32" y2="8" stroke="currentColor" stroke-width="2"/>
+                <line x1="16" y1="48" x2="16" y2="56" stroke="currentColor" stroke-width="2"/>
+                <line x1="48" y1="48" x2="48" y2="56" stroke="currentColor" stroke-width="2"/>
+                <circle cx="32" cy="8" r="2" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="category-card__title">Рама та вилка</h3>
+            <p class="category-card__count">180 товарів</p>
+            <span class="category-card__arrow">&rarr;</span>
+          </a>
+
+          <a href="#catalog" class="category-card reveal">
+            <div class="category-card__icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 28 Q16 20 28 24 Q32 26 36 24 Q48 20 56 28" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <line x1="32" y1="26" x2="32" y2="52" stroke="currentColor" stroke-width="2"/>
+                <circle cx="8" cy="28" r="3" fill="currentColor"/>
+                <circle cx="56" cy="28" r="3" fill="currentColor"/>
+                <circle cx="32" cy="52" r="3" stroke="currentColor" stroke-width="2" fill="none"/>
+              </svg>
+            </div>
+            <h3 class="category-card__title">Кермове управління</h3>
+            <p class="category-card__count">195 товарів</p>
+            <span class="category-card__arrow">&rarr;</span>
+          </a>
+
+          <a href="#catalog" class="category-card reveal">
+            <div class="category-card__icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 8 L20 20 L26 26 L38 26 L44 20 L44 8" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/>
+                <rect x="24" y="26" width="16" height="6" rx="1" stroke="currentColor" stroke-width="2" fill="none"/>
+                <line x1="32" y1="32" x2="32" y2="56" stroke="currentColor" stroke-width="2"/>
+                <line x1="26" y1="44" x2="38" y2="44" stroke="currentColor" stroke-width="2"/>
+                <circle cx="32" cy="56" r="2" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="category-card__title">Аксесуари</h3>
+            <p class="category-card__count">510 товарів</p>
+            <span class="category-card__arrow">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="catalog">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-header__label">Бестселери</span>
+          <h2 class="section-header__title">ПОПУЛЯРНІ ТОВАРИ</h2>
+        </header>
+        <div class="products__grid">
+          <article class="product-card reveal">
+            <div class="product-card__image" style="--card-gradient: linear-gradient(135deg, #1a1a2e, #16213e)">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="40" cy="40" rx="28" ry="28" stroke="rgba(255,255,255,0.3)" stroke-width="6" stroke-dasharray="4 3"/>
+                <ellipse cx="40" cy="40" rx="20" ry="20" stroke="rgba(255,255,255,0.2)" stroke-width="3" stroke-dasharray="4 3"/>
+              </svg>
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Трансмісія</span>
+              <h3 class="product-card__title">Ланцюг Shimano Deore XT CN-M8100</h3>
+              <p class="product-card__desc">12 швидкостей, 126 ланок, HG-X</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">1 250 ₴</span>
+                <button class="btn btn--cart" aria-label="Додати в кошик">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <path d="M16 10a4 4 0 01-8 0"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <span class="product-card__badge">Хіт</span>
+            <div class="product-card__image" style="--card-gradient: linear-gradient(135deg, #0f3460, #1a1a4e)">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="40" cy="40" r="26" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+                <circle cx="40" cy="40" r="18" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+                <circle cx="40" cy="40" r="10" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+                <circle cx="40" cy="40" r="4" fill="rgba(255,255,255,0.3)"/>
+              </svg>
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Трансмісія</span>
+              <h3 class="product-card__title">Касета SRAM GX Eagle 12 шв.</h3>
+              <p class="product-card__desc">10-52T, XD Driver, сталь/алюміній</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">3 850 ₴</span>
+                <button class="btn btn--cart" aria-label="Додати в кошик">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <path d="M16 10a4 4 0 01-8 0"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-card__image" style="--card-gradient: linear-gradient(135deg, #1b4332, #2d6a4f)">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="40" cy="40" r="28" stroke="rgba(255,255,255,0.3)" stroke-width="4"/>
+                <circle cx="40" cy="40" r="22" stroke="rgba(255,255,255,0.15)" stroke-width="8"/>
+              </svg>
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Покришки</span>
+              <h3 class="product-card__title">Continental Grand Prix 5000 28"</h3>
+              <p class="product-card__desc">700x25C, складна, BlackChili</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">1 950 ₴</span>
+                <button class="btn btn--cart" aria-label="Додати в кошик">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <path d="M16 10a4 4 0 01-8 0"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <span class="product-card__badge product-card__badge--new">Новинка</span>
+            <div class="product-card__image" style="--card-gradient: linear-gradient(135deg, #6b1010, #a82020)">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="40" cy="40" r="24" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+                <circle cx="40" cy="40" r="8" fill="rgba(255,255,255,0.15)"/>
+                <circle cx="40" cy="18" r="3" fill="rgba(255,255,255,0.25)"/>
+                <circle cx="40" cy="62" r="3" fill="rgba(255,255,255,0.25)"/>
+                <circle cx="18" cy="40" r="3" fill="rgba(255,255,255,0.25)"/>
+                <circle cx="62" cy="40" r="3" fill="rgba(255,255,255,0.25)"/>
+              </svg>
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Гальма</span>
+              <h3 class="product-card__title">Гальма Shimano SLX M7100</h3>
+              <p class="product-card__desc">Гідравлічні, дискові, передні + задні</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">2 400 ₴</span>
+                <button class="btn btn--cart" aria-label="Додати в кошик">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <path d="M16 10a4 4 0 01-8 0"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-card__image" style="--card-gradient: linear-gradient(135deg, #4a1942, #6b2fa0)">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="16" y="30" width="48" height="14" rx="7" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+                <rect x="20" y="34" width="40" height="6" rx="3" fill="rgba(255,255,255,0.15)"/>
+              </svg>
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Кермо</span>
+              <h3 class="product-card__title">Гріпси Ergon GP1</h3>
+              <p class="product-card__desc">Ергономічні, Kraton/пластик, L/S</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">890 ₴</span>
+                <button class="btn btn--cart" aria-label="Додати в кошик">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <path d="M16 10a4 4 0 01-8 0"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <span class="product-card__badge product-card__badge--sale">Акція</span>
+            <div class="product-card__image" style="--card-gradient: linear-gradient(135deg, #0a4d3c, #1a7a5a)">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="40" y1="10" x2="40" y2="70" stroke="rgba(255,255,255,0.3)" stroke-width="3"/>
+                <line x1="36" y1="10" x2="44" y2="10" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+                <path d="M32 24 Q40 16 48 24" stroke="rgba(255,255,255,0.2)" stroke-width="2" fill="none"/>
+                <circle cx="40" cy="70" r="4" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Вилка</span>
+              <h3 class="product-card__title">Вилка RockShox Recon Silver RL</h3>
+              <p class="product-card__desc">29", хід 120 мм, QR 9 мм</p>
+              <div class="product-card__footer">
+                <div class="product-card__price-group">
+                  <span class="product-card__price product-card__price--old">9 500 ₴</span>
+                  <span class="product-card__price product-card__price--sale">8 500 ₴</span>
+                </div>
+                <button class="btn btn--cart" aria-label="Додати в кошик">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <path d="M16 10a4 4 0 01-8 0"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-card__image" style="--card-gradient: linear-gradient(135deg, #5c4a1e, #8a7030)">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="18" y="30" width="44" height="20" rx="4" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+                <circle cx="28" cy="40" r="5" fill="rgba(255,255,255,0.15)"/>
+                <circle cx="52" cy="40" r="5" fill="rgba(255,255,255,0.15)"/>
+                <line x1="28" y1="40" x2="52" y2="40" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+              </svg>
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Педалі</span>
+              <h3 class="product-card__title">Педалі CrankBrothers Stamp 1</h3>
+              <p class="product-card__desc">Платформа, композит, шипи</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">2 100 ₴</span>
+                <button class="btn btn--cart" aria-label="Додати в кошик">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <path d="M16 10a4 4 0 01-8 0"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <span class="product-card__badge product-card__badge--new">Новинка</span>
+            <div class="product-card__image" style="--card-gradient: linear-gradient(135deg, #1a1a3e, #2e2e6e)">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 36 Q24 28 40 32 Q56 36 68 28" stroke="rgba(255,255,255,0.3)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <line x1="40" y1="32" x2="40" y2="58" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+                <circle cx="12" cy="36" r="3" fill="rgba(255,255,255,0.25)"/>
+                <circle cx="68" cy="28" r="3" fill="rgba(255,255,255,0.25)"/>
+              </svg>
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Кермо</span>
+              <h3 class="product-card__title">Кермо Race Face Next R 35</h3>
+              <p class="product-card__desc">Карбон, 760 мм, rise 20 мм</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">4 200 ₴</span>
+                <button class="btn btn--cart" aria-label="Додати в кошик">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <path d="M16 10a4 4 0 01-8 0"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="products__more reveal">
+          <a href="#" class="btn btn--primary">Дивитися всі товари</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages" id="advantages">
+      <div class="container">
+        <header class="section-header section-header--light reveal">
+          <span class="section-header__label">Наші сильні сторони</span>
+          <h2 class="section-header__title">ЧОМУ ОБИРАЮТЬ НАС</h2>
+        </header>
+        <div class="advantages__grid">
+          <article class="advantage-card reveal">
+            <div class="advantage-card__icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 4L6 12v12c0 10.55 7.67 20.4 18 22.82C34.33 44.4 42 34.55 42 24V12L24 4z" stroke="currentColor" stroke-width="2" fill="none"/>
+                <path d="M16 24l6 6 10-12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="advantage-card__title">Оригінальні запчастини</h3>
+            <p class="advantage-card__text">Працюємо напряму з офіційними дистриб'юторами Shimano, SRAM, Continental та інших провідних брендів.</p>
+          </article>
+
+          <article class="advantage-card reveal">
+            <div class="advantage-card__icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/>
+                <polyline points="24,12 24,24 34,28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="advantage-card__title">Швидка доставка</h3>
+            <p class="advantage-card__text">Відправка в день замовлення. Доставка Новою Поштою по всій Україні за 1-2 дні.</p>
+          </article>
+
+          <article class="advantage-card reveal">
+            <div class="advantage-card__icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 6h8v6h10a2 2 0 012 2v24a2 2 0 01-2 2H10a2 2 0 01-2-2V14a2 2 0 012-2h10V6z" stroke="currentColor" stroke-width="2" fill="none"/>
+                <path d="M20 6h8v6h-8V6z" stroke="currentColor" stroke-width="2" fill="none"/>
+                <path d="M16 24l6 6 10-10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="advantage-card__title">Гарантія якості</h3>
+            <p class="advantage-card__text">Офіційна гарантія від виробника на всі товари. Повернення протягом 14 днів.</p>
+          </article>
+
+          <article class="advantage-card reveal">
+            <div class="advantage-card__icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 36l8-8 6 6 10-14 8 8 8-10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="42" cy="20" r="4" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="advantage-card__title">Експертна підтримка</h3>
+            <p class="advantage-card__text">Наші консультанти — досвідчені велосипедисти, які допоможуть обрати ідеальні компоненти.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="newsletter">
+      <div class="container cta__inner reveal">
+        <div class="cta__content">
+          <h2 class="cta__title">БУДЬТЕ В КУРСІ НОВИНОК</h2>
+          <p class="cta__text">Підпишіться на розсилку та отримайте <strong>знижку 10%</strong> на перше замовлення.</p>
+        </div>
+        <form class="cta__form" action="#" method="post">
+          <div class="cta__input-group">
+            <label for="email" class="visually-hidden">Електронна пошта</label>
+            <input type="email" id="email" name="email" class="cta__input" placeholder="Ваш email" required>
+            <button type="submit" class="btn btn--primary cta__btn">Підписатися</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col footer__col--about">
+          <a href="#" class="logo logo--footer" aria-label="VeloZone — головна">
+            <svg class="logo__icon" viewBox="0 0 40 40" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+              <circle cx="20" cy="20" r="7" stroke="currentColor" stroke-width="2"/>
+              <line x1="20" y1="2" x2="20" y2="13" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="20" y1="27" x2="20" y2="38" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="2" y1="20" x2="13" y2="20" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="27" y1="20" x2="38" y2="20" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+            <span class="logo__text">VELO<span class="logo__accent">ZONE</span></span>
+          </a>
+          <p class="footer__about-text">Інтернет-магазин велозапчастин з найширшим асортиментом оригінальних компонентів від світових брендів.</p>
+        </div>
+
+        <nav class="footer__col" aria-label="Каталог">
+          <h4 class="footer__heading">Каталог</h4>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">Трансмісія</a></li>
+            <li><a href="#" class="footer__link">Гальма</a></li>
+            <li><a href="#" class="footer__link">Колеса та покришки</a></li>
+            <li><a href="#" class="footer__link">Рама та вилка</a></li>
+            <li><a href="#" class="footer__link">Аксесуари</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Інформація">
+          <h4 class="footer__heading">Інформація</h4>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">Про нас</a></li>
+            <li><a href="#" class="footer__link">Доставка і оплата</a></li>
+            <li><a href="#" class="footer__link">Повернення</a></li>
+            <li><a href="#" class="footer__link">Гарантія</a></li>
+            <li><a href="#" class="footer__link">Контакти</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col footer__col--contacts">
+          <h4 class="footer__heading">Контакти</h4>
+          <address class="footer__address">
+            <p>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              <a href="tel:+380441234567" class="footer__link">+38 (044) 123-45-67</a>
+            </p>
+            <p>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:info@velozone.ua" class="footer__link">info@velozone.ua</a>
+            </p>
+            <p>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>м. Київ, вул. Велосипедна, 42</span>
+            </p>
+          </address>
+          <div class="footer__socials">
+            <a href="#" class="footer__social" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="footer__social" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" class="footer__social" aria-label="YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"/><polygon points="9.75,15.02 15.5,11.75 9.75,8.48"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 VeloZone. Усі права захищено.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
